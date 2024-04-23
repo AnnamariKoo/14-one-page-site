@@ -18,10 +18,10 @@
       <h3><a href="X">PORTFOLIO</a></h3>
       <nav>
         <ul>
-          <li><a href="X">Menneisyys</a></li>
-          <li><a href="X">Nykyisyys</a></li>
-          <li><a href="X">Tulevaisuus</a></li>
-          <li><a href="X">Yhteystiedot</a></li>
+          <li><a href="#linkki1">Menneisyys</a></li>
+          <li><a href="#linkki2">Nykyisyys</a></li>
+          <li><a href="#linkki3">Tulevaisuus</a></li>
+          <li><a href="#linkki4">Yhteystiedot</a></li>
         </ul>
       </nav>
     </header>
@@ -51,7 +51,7 @@
       </div>
 
       <!-- MENNEISYYS -->
-
+      <span id="linkki1" class="ankkuri"></span>
       <section id="menneisyys">
         <h2>Menneisyys</h2>
         <div id="three-cards">
@@ -103,6 +103,7 @@
       <!-- NYKYISYYS, TULEVAISUUS  -->
 
       <section class="tiedot">
+        <span id="linkki2" class="ankkuri"></span>
         <div id="nykyisyys">
           <h2>Nykyisyys</h2>
           <div class="img-flex">
@@ -127,6 +128,7 @@
       </section>
 
       <section class="tiedot">
+        <span id="linkki3" class="ankkuri"></span>
         <div id="tulevaisuus">
           <h2>Tulevaisuus</h2>
           <div class="img-flex">
@@ -153,11 +155,26 @@
       <!-- FOOTER  -->
 
       <footer>
+        <span id="linkki4" class="ankkuri"></span>
         <div id="contact">
           <h2>Contact me</h2>
-          <p>Nimi:</p>
+          <!-- <p>Nimi:</p>
           <p>Sähköposti:</p>
-          <p>Palautetta:</p>
+          <p>Palautetta:</p> -->
+          <form>
+            <div class="lomake">
+              <label for="Nimi">Nimi:</label>
+              <input type="text" />
+            </div>
+            <div class="lomake">
+              <label for="email">Email:</label>
+              <input type="email" name="" id="" />
+            </div>
+            <div class="lomake">
+              <label for="Palautetta">Palautetta:</label>
+              <input type="textarea" />
+            </div>
+          </form>
           <div id="laheta">
             <button>Lähetä</button>
           </div>

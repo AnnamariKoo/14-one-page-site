@@ -115,6 +115,11 @@ nav ul li {
   opacity: 0.5;
 }
 
+.ankkuri {
+  position: relative;
+  top: -55px;
+}
+
 /* TIETOJA(menneisyys) */
 
 #menneisyys {
@@ -178,17 +183,39 @@ footer {
   margin: 1rem;
 }
 
+#contact h2 {
+  margin-bottom: 2rem;
+}
+
+.lomake {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 10rem;
+}
+input {
+  width: 70%;
+  margin: 0.5rem;
+}
+
+label {
+  font-family: var(--font-family-p);
+  font-size: 1.6rem;
+}
 #laheta {
   display: flex;
-  justify-content: space-around;
+  justify-content: right;
 }
 
 button {
   background-color: var(--color4);
   color: var(--color1);
   font-family: var(--font-family-p);
+  font-size: 1.6rem;
   border: #d0b8a8 1px solid;
   border-radius: 10%;
+  padding: 0 1rem;
+  margin-top: 1rem;
 }
 
 #copyright {
