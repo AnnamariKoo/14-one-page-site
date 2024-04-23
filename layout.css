@@ -1,0 +1,196 @@
+:root {
+  --color1: #f8ede3;
+  --color2: #dfd3c3;
+  --color3: #d0b8a8;
+  --color4: #85586f;
+  --font-family-p: "Mukta", sans-serif;
+  --font-family-h1: "Bebas neue", serif;
+  --font-family-h2-h3: "Oswald", serif;
+}
+
+html {
+  font-size: 62.5%; /*62,5% x 16px = 10px */
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+figure {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-family: var(--font-family-h1);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-family: var(--font-family-h2-h3);
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: var(--font-family-h2-h3);
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+li {
+  font-size: 2rem;
+  font-family: var(--font-family-h2-h3);
+  margin-left: 3rem;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol li {
+  font-family: var(--font-family-p);
+  margin-top: 2rem;
+}
+
+/* HEADER JA NAVIGAATIO  */
+
+header {
+  width: 900px;
+  background-color: var(--color4);
+  color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+header h3 {
+  padding: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  padding: 1.5rem;
+}
+
+/* CONTAINER  */
+
+#container {
+  background-color: var(--color1);
+  padding: 2rem;
+}
+
+/* PORTFOLIOLISTAUS  */
+
+#portfolio-img {
+  background-image: url(images/backround.jpg);
+  max-width: 100%;
+  margin: 7.5rem 1rem 2rem 1rem;
+  padding: 1rem;
+}
+
+#my-portfolio {
+  padding: 1rem;
+  margin: 5rem;
+  background-color: var(--color2);
+  opacity: 0.5;
+}
+
+/* TIETOJA(menneisyys) */
+
+#menneisyys {
+  padding: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  background-color: var(--color3);
+}
+
+#three-cards {
+  display: flex;
+  flex-grow: 1;
+}
+
+.card {
+  background-color: var(--color1);
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color4);
+  border-radius: 5%;
+  width: 33%;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* TIETOJA (nykyisyys, tulevaisuus) */
+
+.tiedot {
+  border-top: #85586f 2px solid;
+  margin: 1rem;
+}
+
+.tiedot img {
+  max-width: 30%;
+}
+
+.img-flex {
+  display: flex;
+}
+#nykyisyys img {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+#tulevaisuus img {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+#nykyisyys,
+#tulevaisuus,
+#contact {
+  margin: 2rem 0 2rem 0;
+}
+
+/* FOOTER  */
+
+footer {
+  border-top: #85586f 2px solid;
+  margin: 1rem;
+}
+
+#laheta {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background-color: var(--color4);
+  color: var(--color1);
+  font-family: var(--font-family-p);
+  border: #d0b8a8 1px solid;
+  border-radius: 10%;
+}
+
+#copyright {
+  border-top: #85586f 2px solid;
+}
