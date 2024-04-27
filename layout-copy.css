@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  max-width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -45,7 +45,6 @@ h3 {
 
 p {
   font-size: 1.6rem;
-  text-align: justify;
 }
 
 li {
@@ -71,7 +70,7 @@ ol li {
 /* HEADER JA NAVIGAATIO  */
 
 header {
-  width: 100%;
+  width: 900px;
   background-color: var(--color4);
   color: var(--color1);
   display: flex;
@@ -81,34 +80,31 @@ header {
 }
 
 header h3 {
-  margin: 2.5rem 1rem;
-  /* padding: 1.5rem; */
+  padding: 1.5rem;
 }
 
 nav ul {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 nav ul li {
-  margin: 2.5rem 1rem;
-  /* padding: 1.5rem; */
+  padding: 1.5rem;
 }
 
 /* CONTAINER  */
 
 #container {
   background-color: var(--color1);
-  padding: 0.5rem 0;
+  padding: 2rem;
 }
 
 /* PORTFOLIOLISTAUS  */
 
 #portfolio-img {
-  background-image: url(images/forest.jpg);
+  background-image: url(images/backround.jpg);
   max-width: 100%;
-  margin: 5rem 0 0 0;
+  margin: 7.5rem 1rem 2rem 1rem;
   padding: 1rem;
 }
 
@@ -116,45 +112,45 @@ nav ul li {
   padding: 1rem;
   margin: 5rem;
   background-color: var(--color2);
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .ankkuri {
   position: relative;
-  top: -68px;
+  top: -55px;
 }
 
 /* TIETOJA(menneisyys) */
 
 #menneisyys {
   padding: 1rem;
-  /* margin: 1rem 0 2rem 0; */
+  margin: 1rem 1rem 2rem 1rem;
   background-color: var(--color3);
 }
 
 #three-cards {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .card {
   background-color: var(--color1);
-  margin: 1rem auto;
+  margin: 1rem;
   padding: 1rem;
   border: 1px solid var(--color4);
   border-radius: 5%;
-  width: 90%;
+  width: 33%;
 }
 
 .card img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* TIETOJA (nykyisyys, tulevaisuus) */
 
 .tiedot {
-  margin: 2rem;
+  border-top: #85586f 2px solid;
+  margin: 1rem;
 }
 
 .tiedot img {
@@ -163,18 +159,15 @@ nav ul li {
 
 .img-flex {
   display: flex;
-  flex-direction: column;
 }
 #nykyisyys img {
-  max-width: 100%;
-}
-
-#tulevaisuus {
-  border-top: #85586f 2px solid;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 #tulevaisuus img {
-  max-width: 100%;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
 }
 
 #nykyisyys,
@@ -227,49 +220,4 @@ button {
 
 #copyright {
   border-top: #85586f 2px solid;
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    padding: 0.5rem;
-  }
-
-  #portfolio-img {
-    margin: 7.5rem 1rem 1rem 1rem;
-  }
-
-  #menneisyys {
-    margin: 1rem 1rem 1rem 1rem;
-  }
-  #three-cards {
-    flex-wrap: nowrap;
-    flex: 1;
-  }
-
-  .card {
-    margin: 1rem;
-  }
-
-  .img-flex {
-    flex-direction: row;
-  }
-
-  #nykyisyys img {
-    object-fit: scale-down;
-    max-width: 30%;
-    max-height: auto;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-  }
-
-  #tulevaisuus img {
-    object-fit: scale-down;
-    max-width: 30%;
-    max-height: auto;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-  }
-  #nykyisyys {
-    border-top: #85586f 2px solid;
-  }
 }
