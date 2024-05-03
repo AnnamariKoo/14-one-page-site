@@ -74,6 +74,7 @@ header {
   width: 100%;
   background-color: var(--color4);
   color: var(--color1);
+  height: 70px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -81,6 +82,7 @@ header {
 }
 
 header h3 {
+  font-size: 2rem;
   margin: 2.5rem 1rem;
   /* padding: 1.5rem; */
 }
@@ -92,6 +94,7 @@ nav ul {
 }
 
 nav ul li {
+  font-size: 2rem;
   margin: 2.5rem 1rem;
   /* padding: 1.5rem; */
 }
@@ -121,7 +124,7 @@ nav ul li {
 
 .ankkuri {
   position: relative;
-  top: -68px;
+  top: -75px;
 }
 
 /* TIETOJA(menneisyys) */
@@ -229,6 +232,18 @@ button {
   border-top: #85586f 2px solid;
 }
 
+/* MOBIILINÄKYMÄN NAVIGAATIO  */
+@media only screen and (max-width: 600px) {
+  header h3 {
+    font-size: 1.2rem;
+  }
+
+  nav ul li {
+    font-size: 1.2rem;
+  }
+}
+
+/* NÄKYMÄ KUN SCREEN MIN 768px */
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0.5rem;
